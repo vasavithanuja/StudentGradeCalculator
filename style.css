@@ -1,0 +1,1217 @@
+/* ========================================
+   BASIC RESET
+======================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #222;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+
+/* ========================================
+   MOBILE APP
+======================================== */
+
+.app {
+
+    width: 390px;
+
+    height: 844px;
+
+    min-height: 844px;
+
+    background: #f5f7fb;
+
+    position: relative;
+
+    overflow-x: hidden;
+
+    overflow-y: auto;
+
+    box-shadow:
+        0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* ========================================
+   AUTH HEADER
+======================================== */
+
+.auth-header {
+
+    text-align: center;
+
+    padding: 45px 22px 28px;
+
+    background: #4f46e5;
+
+    color: white;
+}
+
+
+.logo {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto;
+
+    background: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 35px;
+}
+
+
+.auth-header h1 {
+
+    font-size: 24px;
+
+    line-height: 1.25;
+
+    margin-top: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+.auth-header p {
+
+    font-size: 14px;
+
+    margin: 0;
+
+    opacity: 0.9;
+}
+
+
+
+/* ========================================
+   AUTH CARD
+======================================== */
+
+.auth-card {
+
+    margin: 25px 18px;
+
+    padding: 25px 20px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.auth-card h2 {
+
+    font-size: 23px;
+
+    margin-bottom: 8px;
+
+    color: #222;
+}
+
+
+.small-text {
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+
+
+/* ========================================
+   LABEL
+======================================== */
+
+label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+
+/* ========================================
+   INPUT
+======================================== */
+
+input {
+
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: none;
+
+    background: #fafafa;
+}
+
+
+input:focus {
+
+    border-color: #4f46e5;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(79, 70, 229, 0.08);
+}
+
+
+input::placeholder {
+
+    color: #aaa;
+}
+
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+button {
+
+    width: 100%;
+
+    border: none;
+
+    padding: 14px;
+
+    margin-top: 22px;
+
+    border-radius: 10px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background: #4338ca;
+}
+
+
+
+/* ========================================
+   SWITCH TEXT
+======================================== */
+
+.switch-text {
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: #777;
+
+    margin-top: 22px;
+}
+
+
+.switch-text a {
+
+    color: #4f46e5;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+
+/* ========================================
+   MESSAGE
+======================================== */
+
+.page-message {
+
+    position: absolute;
+
+    top: 10px;
+
+    left: 15px;
+
+    right: 15px;
+
+    padding: 12px 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+.error-message {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    border: 1px solid #fecaca;
+}
+
+
+
+/* ========================================
+   HOME HEADER
+======================================== */
+
+.home-header {
+
+    background: #4f46e5;
+
+    color: white;
+
+    padding: 23px 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.hello {
+
+    font-size: 13px;
+
+    opacity: 0.9;
+}
+
+
+.home-header h1 {
+
+    margin-top: 5px;
+
+    font-size: 23px;
+
+    max-width: 210px;
+
+    word-break: break-word;
+}
+
+
+
+/* ========================================
+   LOGOUT
+======================================== */
+
+.logout-btn {
+
+    width: auto;
+
+    margin: 0;
+
+    padding: 9px 13px;
+
+    background: white;
+
+    color: #4f46e5;
+
+    font-size: 12px;
+
+    border-radius: 8px;
+}
+
+
+
+/* ========================================
+   HOME CONTENT
+======================================== */
+
+.home-content {
+
+    padding: 18px;
+
+    padding-bottom: 90px;
+}
+
+
+
+/* ========================================
+   WELCOME CARD
+======================================== */
+
+.welcome-card {
+
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.06);
+}
+
+
+.card-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 5px;
+}
+
+
+.welcome-card h2 {
+
+    font-size: 20px;
+
+    line-height: 1.3;
+
+    margin: 12px 0 8px;
+}
+
+
+.welcome-card p {
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+
+/* ========================================
+   START BUTTON
+======================================== */
+
+.start-btn {
+
+    display: block;
+
+    margin-top: 18px;
+
+    padding: 13px;
+
+    border-radius: 10px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+
+/* ========================================
+   CALCULATOR CARD
+======================================== */
+
+.calculator-card {
+
+    margin-top: 18px;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.06);
+}
+
+
+.calculator-card h2 {
+
+    margin: 0;
+
+    font-size: 20px;
+}
+
+
+.calculator-card h3 {
+
+    font-size: 16px;
+
+    margin-top: 25px;
+
+    margin-bottom: 12px;
+}
+
+
+
+/* ========================================
+   SUBJECT
+======================================== */
+
+.subject {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+
+    gap: 10px;
+}
+
+
+.subject span {
+
+    font-size: 14px;
+
+    color: #444;
+
+    flex: 1;
+}
+
+
+.subject input {
+
+    width: 90px;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+
+
+/* ========================================
+   CALCULATE BUTTON
+======================================== */
+
+.calculate-btn {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 22px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+
+/* ========================================
+   DASHBOARD GRID
+======================================== */
+
+.dashboard-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+
+.dashboard-box {
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 18px 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.05);
+}
+
+
+.dashboard-box span {
+
+    display: block;
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+
+.dashboard-box small {
+
+    display: block;
+
+    color: #777;
+
+    font-size: 12px;
+
+    margin-bottom: 6px;
+}
+
+
+.dashboard-box strong {
+
+    display: block;
+
+    color: #4f46e5;
+
+    font-size: 21px;
+}
+
+
+
+/* ========================================
+   DASHBOARD RESULT
+======================================== */
+
+.dashboard-result {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    margin-top: 18px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.05);
+}
+
+
+.dashboard-result h2 {
+
+    font-size: 19px;
+
+    margin-bottom: 12px;
+}
+
+
+.dashboard-result-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+}
+
+
+.dashboard-result-row:last-child {
+
+    border-bottom: none;
+}
+
+
+.dashboard-result-row span {
+
+    color: #777;
+}
+
+
+
+/* ========================================
+   QUICK ACTIONS
+======================================== */
+
+.quick-actions {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    margin-top: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.quick-actions h2 {
+
+    font-size: 19px;
+
+    margin-bottom: 12px;
+}
+
+
+.quick-action {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 5px;
+
+    border-bottom: 1px solid #eee;
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 20px;
+}
+
+
+.quick-action:last-child {
+
+    border-bottom: none;
+}
+
+
+.quick-action span {
+
+    flex: 1;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.quick-action b {
+
+    color: #4f46e5;
+}
+
+
+
+/* ========================================
+   RESULT HEADER
+======================================== */
+
+.result-header {
+
+    height: 90px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 15px 18px;
+
+    gap: 15px;
+}
+
+
+.result-header h1 {
+
+    margin: 0;
+
+    font-size: 22px;
+}
+
+
+.result-header p {
+
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    opacity: 0.9;
+}
+
+
+.back-btn {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 30px;
+}
+
+
+
+/* ========================================
+   RESULT CONTENT
+======================================== */
+
+.result-content {
+
+    padding: 18px;
+
+    padding-bottom: 90px;
+}
+
+
+
+/* ========================================
+   STUDENT RESULT
+======================================== */
+
+.student-result-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.06);
+}
+
+
+.result-icon {
+
+    font-size: 42px;
+}
+
+
+.student-result-card h2 {
+
+    margin: 10px 0 5px;
+
+    font-size: 21px;
+}
+
+
+.student-result-card p {
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+
+/* ========================================
+   GRADE CARD
+======================================== */
+
+.grade-card {
+
+    background: #4f46e5;
+
+    color: white;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    margin-top: 15px;
+
+    text-align: center;
+}
+
+
+.grade-card p {
+
+    font-size: 13px;
+}
+
+
+.grade {
+
+    font-size: 48px;
+
+    font-weight: bold;
+
+    margin: 8px 0;
+}
+
+
+.pass {
+
+    display: inline-block;
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    background: #22c55e;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.fail {
+
+    display: inline-block;
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    background: #ef4444;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+
+/* ========================================
+   MARKS CARD
+======================================== */
+
+.marks-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    margin-top: 15px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.04);
+}
+
+
+.marks-card h2 {
+
+    margin-bottom: 8px;
+
+    font-size: 19px;
+}
+
+
+.mark-line {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+}
+
+
+.mark-line:last-child {
+
+    border-bottom: none;
+}
+
+
+.mark-line span {
+
+    color: #555;
+}
+
+
+
+/* ========================================
+   SUMMARY
+======================================== */
+
+.summary {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+
+.summary div {
+
+    flex: 1;
+
+    background: white;
+
+    padding: 18px 10px;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+
+.summary small {
+
+    display: block;
+
+    color: #777;
+
+    font-size: 12px;
+
+    margin-bottom: 7px;
+}
+
+
+.summary strong {
+
+    font-size: 18px;
+}
+
+
+
+/* ========================================
+   NO RESULT
+======================================== */
+
+.no-result {
+
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+
+.big-icon {
+
+    font-size: 50px;
+}
+
+
+.no-result h2 {
+
+    font-size: 20px;
+
+    margin: 10px 0;
+}
+
+
+.no-result p {
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+
+/* ========================================
+   BOTTOM NAVIGATION
+======================================== */
+
+.bottom-nav {
+
+    position: sticky;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 68px;
+
+    background: white;
+
+    border-top: 1px solid #eee;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    z-index: 50;
+}
+
+
+.bottom-nav a {
+
+    width: 25%;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: #888;
+
+    font-size: 10px;
+
+    text-align: center;
+}
+
+
+.bottom-nav span {
+
+    display: block;
+
+    font-size: 20px;
+
+    margin-bottom: 3px;
+}
+
+
+.bottom-nav a.active {
+
+    color: #4f46e5;
+
+    font-weight: bold;
+}
+
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 430px) {
+
+    body {
+
+        background: #f5f7fb;
+
+        display: block;
+    }
+
+
+    .app {
+
+        width: 100%;
+
+        height: 100vh;
+
+        min-height: 100vh;
+
+        box-shadow: none;
+    }
+
+}
